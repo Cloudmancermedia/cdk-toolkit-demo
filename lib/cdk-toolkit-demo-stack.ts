@@ -120,7 +120,7 @@ async function main() {
 
     const stack = await deployStack(toolkit, cloudAssembly, stackName);
 
-    const functionArn = stack.outputs['LambdaFunctionArn'].value;
+    const functionArn = stack.outputs['LambdaFunctionArn'];
     successLog(`Lambda Function ARN: ${functionArn}`);
 
     // Uncomment for a successful test payload
